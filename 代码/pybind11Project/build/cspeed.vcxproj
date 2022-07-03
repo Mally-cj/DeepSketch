@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{23640CD9-F1B0-3291-997E-83F61EF41099}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>cspeed</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.3.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\Py\from_other</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cspeed.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cspeed.cp38-win_amd64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cspeed.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cspeed.cp38-win_amd64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">cspeed.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">cspeed.cp38-win_amd64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">cspeed.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">cspeed.cp38-win_amd64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\pybind11\include;E:\software\Anaconda3\envs\pytorch\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";cspeed_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";cspeed_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\pybind11\include;E:\software\Anaconda3\envs\pytorch\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\pybind11\include;E:\software\Anaconda3\envs\pytorch\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>E:\software\Anaconda3\envs\pytorch\libs\python38.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/Debug/cspeed.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/Debug/cspeed.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\pybind11\include;E:\software\Anaconda3\envs\pytorch\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";cspeed_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";cspeed_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\pybind11\include;E:\software\Anaconda3\envs\pytorch\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\pybind11\include;E:\software\Anaconda3\envs\pytorch\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>E:\software\Anaconda3\envs\pytorch\libs\python38.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/Release/cspeed.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/Release/cspeed.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\pybind11\include;E:\software\Anaconda3\envs\pytorch\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";cspeed_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";cspeed_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\pybind11\include;E:\software\Anaconda3\envs\pytorch\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\pybind11\include;E:\software\Anaconda3\envs\pytorch\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>E:\software\Anaconda3\envs\pytorch\libs\python38.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/MinSizeRel/cspeed.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/MinSizeRel/cspeed.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\pybind11\include;E:\software\Anaconda3\envs\pytorch\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";cspeed_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";cspeed_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\pybind11\include;E:\software\Anaconda3\envs\pytorch\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\pybind11\include;E:\software\Anaconda3\envs\pytorch\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>E:\software\Anaconda3\envs\pytorch\libs\python38.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/RelWithDebInfo/cspeed.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/RelWithDebInfo/cspeed.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\software\cmake\bin\cmake.exe -SE:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project -BE:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build --check-stamp-file E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeCCompiler.cmake;E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeCXXCompiler.cmake;E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeRCCompiler.cmake;E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeSystem.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;E:\software\cmake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;E:\software\cmake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;E:\software\cmake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\software\cmake\bin\cmake.exe -SE:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project -BE:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build --check-stamp-file E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeCCompiler.cmake;E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeCXXCompiler.cmake;E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeRCCompiler.cmake;E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeSystem.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;E:\software\cmake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;E:\software\cmake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;E:\software\cmake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\software\cmake\bin\cmake.exe -SE:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project -BE:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build --check-stamp-file E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeCCompiler.cmake;E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeCXXCompiler.cmake;E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeRCCompiler.cmake;E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeSystem.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;E:\software\cmake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;E:\software\cmake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;E:\software\cmake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\software\cmake\bin\cmake.exe -SE:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project -BE:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build --check-stamp-file E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeCCompiler.cmake;E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeCXXCompiler.cmake;E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeRCCompiler.cmake;E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\3.18.0-rc2\CMakeSystem.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;E:\software\cmake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;E:\software\cmake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;E:\software\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;E:\software\cmake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\software\cmake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;E:\software\cmake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\software\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\main.cpp" />
+    <ClCompile Include="func.cpp" />
+    <ClCompile Include="funcBase.cpp" />
+    <ClCompile Include="lossfunc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\ZERO_CHECK.vcxproj">
+      <Project>{0A0041F7-8F44-3A21-B987-657C70DAA819}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="func.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.3.targets" />
+  </ImportGroup>
+</Project>

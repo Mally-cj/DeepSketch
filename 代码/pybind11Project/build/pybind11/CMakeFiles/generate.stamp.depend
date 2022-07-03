@@ -1,0 +1,16 @@
+# CMake generation dependency list for this directory.
+E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/pybind11/CMakeLists.txt
+E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/pybind11/tools/FindPythonLibsNew.cmake
+E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/pybind11/tools/pybind11Common.cmake
+E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/pybind11/tools/pybind11Tools.cmake
+E:/software/cmake/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+E:/software/cmake/share/cmake-3.18/Modules/CMakeDependentOption.cmake
+E:/software/cmake/share/cmake-3.18/Modules/CMakePackageConfigHelpers.cmake
+E:/software/cmake/share/cmake-3.18/Modules/CMakeParseArguments.cmake
+E:/software/cmake/share/cmake-3.18/Modules/CheckCXXCompilerFlag.cmake
+E:/software/cmake/share/cmake-3.18/Modules/CheckCXXSourceCompiles.cmake
+E:/software/cmake/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake
+E:/software/cmake/share/cmake-3.18/Modules/FindPackageMessage.cmake
+E:/software/cmake/share/cmake-3.18/Modules/FindPythonInterp.cmake
+E:/software/cmake/share/cmake-3.18/Modules/GNUInstallDirs.cmake
+E:/software/cmake/share/cmake-3.18/Modules/WriteBasicConfigVersionFile.cmake

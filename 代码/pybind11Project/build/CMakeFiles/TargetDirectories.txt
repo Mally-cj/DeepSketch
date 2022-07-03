@@ -1,0 +1,4 @@
+E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/CMakeFiles/cspeed.dir
+E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/CMakeFiles/ALL_BUILD.dir
+E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/CMakeFiles/ZERO_CHECK.dir
+E:/software/Anaconda3/envs/pytorch/C++project/0601new3/pybind11Project/build/pybind11/CMakeFiles/ALL_BUILD.dir

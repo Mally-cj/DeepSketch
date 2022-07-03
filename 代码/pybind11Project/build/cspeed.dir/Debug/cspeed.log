@@ -1,0 +1,65 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+  main.cpp
+  func.cpp
+func.cpp(16,30): warning C4244: “=”: 从“_Ty”转换到“int”，可能丢失数据
+          with
+          [
+              _Ty=pybind11::ssize_t
+          ]
+func.cpp(20,18): warning C4244: “初始化”: 从“_Ty”转换到“int”，可能丢失数据
+          with
+          [
+              _Ty=pybind11::ssize_t
+          ]
+func.cpp(32,56): warning C4244: “参数”: 从“_Ty”转换到“int”，可能丢失数据
+          with
+          [
+              _Ty=pybind11::ssize_t
+          ]
+func.cpp(72,21): warning C4244: “=”: 从“_Ty”转换到“int”，可能丢失数据
+          with
+          [
+              _Ty=pybind11::ssize_t
+          ]
+func.cpp(73,21): warning C4244: “=”: 从“_Ty”转换到“int”，可能丢失数据
+          with
+          [
+              _Ty=pybind11::ssize_t
+          ]
+func.cpp(74,22): warning C4244: “=”: 从“_Ty”转换到“int”，可能丢失数据
+          with
+          [
+              _Ty=pybind11::ssize_t
+          ]
+func.cpp(75,22): warning C4244: “=”: 从“_Ty”转换到“int”，可能丢失数据
+          with
+          [
+              _Ty=pybind11::ssize_t
+          ]
+func.cpp(132,13): warning C4101: “size”: 未引用的局部变量
+func.cpp(150,48): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+func.cpp(151,48): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+func.cpp(155,21): warning C4244: “=”: 从“_Ty”转换到“int”，可能丢失数据
+          with
+          [
+              _Ty=pybind11::ssize_t
+          ]
+func.cpp(156,21): warning C4244: “=”: 从“_Ty”转换到“int”，可能丢失数据
+          with
+          [
+              _Ty=pybind11::ssize_t
+          ]
+func.cpp(157,22): warning C4244: “=”: 从“_Ty”转换到“int”，可能丢失数据
+          with
+          [
+              _Ty=pybind11::ssize_t
+          ]
+func.cpp(158,22): warning C4244: “=”: 从“_Ty”转换到“int”，可能丢失数据
+          with
+          [
+              _Ty=pybind11::ssize_t
+          ]
+func.cpp(203,42): warning C4554: “&”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+func.cpp(219,13): warning C4101: “size”: 未引用的局部变量
+  正在生成代码...
+  cspeed.vcxproj -> E:\software\Anaconda3\envs\pytorch\C++project\0601new3\pybind11Project\build\..\..\Py\from_other\cspeed.cp38-win_amd64.pyd

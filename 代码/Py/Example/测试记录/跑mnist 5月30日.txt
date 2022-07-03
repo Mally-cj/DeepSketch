@@ -1,0 +1,57 @@
+E:\software\Anaconda3\envs\pytorch\python.exe "E:/software/Anaconda3/envs/pytorch/C++project/new 2/Py/Example/CNN.py"
+2022-05-30 23:04:03,run
+epoch: 1, accuracy: 0.096,运行2385394.481400毫秒 
+2022-05-30 23:44:12,run
+epoch: 2, accuracy: 0.096,运行2409108.369000毫秒 
+2022-05-31 00:24:36,run
+epoch: 3, accuracy: 0.096,运行2424029.148400毫秒 
+2022-05-31 01:05:17,run
+epoch: 4, accuracy: 0.096,运行2440701.019000毫秒 
+E:\software\Anaconda3\envs\pytorch\C++project\new 2\Py\loss.py:71: RuntimeWarning: invalid value encountered in log
+  -np.sum(np.multiply(self.parents[1].value, np.log(prob + 1e-10))))
+2022-05-31 01:29:40,run
+epoch: 5, accuracy: 0.090,运行1463404.556500毫秒 
+2022-05-31 01:50:49,run
+epoch: 6, accuracy: 0.098,运行1268388.809400毫秒 
+2022-05-31 02:11:54,run
+epoch: 7, accuracy: 0.092,运行1265545.527700毫秒 
+2022-05-31 02:33:00,run
+epoch: 8, accuracy: 0.099,运行1265626.530800毫秒 
+2022-05-31 02:54:06,run
+epoch: 9, accuracy: 0.088,运行1265942.009500毫秒 
+2022-05-31 03:15:14,run
+epoch: 10, accuracy: 0.100,运行1268566.682700毫秒 
+2022-05-31 03:36:21,run
+epoch: 11, accuracy: 0.090,运行1266776.541700毫秒 
+2022-05-31 03:57:27,run
+epoch: 12, accuracy: 0.098,运行1265943.898000毫秒 
+2022-05-31 04:18:30,run
+epoch: 13, accuracy: 0.089,运行1263355.352800毫秒 
+2022-05-31 04:39:34,run
+epoch: 14, accuracy: 0.102,运行1263853.150200毫秒 
+2022-05-31 05:00:48,run
+epoch: 15, accuracy: 0.089,运行1273943.942800毫秒 
+2022-05-31 05:21:51,run
+epoch: 16, accuracy: 0.104,运行1263147.555800毫秒 
+2022-05-31 05:42:54,run
+epoch: 17, accuracy: 0.091,运行1262310.330500毫秒 
+2022-05-31 06:03:56,run
+epoch: 18, accuracy: 0.098,运行1262261.002000毫秒 
+2022-05-31 06:24:59,run
+epoch: 19, accuracy: 0.092,运行1262669.936800毫秒 
+2022-05-31 06:46:04,run
+epoch: 20, accuracy: 0.098,运行1265530.907500毫秒 
+2022-05-31 07:07:09,run
+epoch: 21, accuracy: 0.091,运行1264940.991100毫秒 
+2022-05-31 07:28:13,run
+epoch: 22, accuracy: 0.100,运行1264004.485700毫秒 
+2022-05-31 07:49:19,run
+epoch: 23, accuracy: 0.089,运行1265660.078000毫秒 
+2022-05-31 08:10:26,run
+epoch: 24, accuracy: 0.097,运行1267068.728800毫秒 
+2022-05-31 08:31:27,run
+epoch: 25, accuracy: 0.090,运行1261404.746700毫秒 
+2022-05-31 08:52:25,run
+epoch: 26, accuracy: 0.102,运行1257798.322900毫秒 
+2022-05-31 09:13:33,run
+epoch: 27, accuracy: 0.092,运行1267584.874100毫秒 
